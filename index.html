@@ -30,6 +30,18 @@
     width:100%;
     max-width:430px;
     padding:28px 22px 40px;
+    position:relative;
+  }
+  .marca-agua{
+    position:absolute;
+    top:38%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    max-width:75%;
+    opacity:.06;
+    z-index:-1;
+    pointer-events:none;
   }
   .foto-marco{
     width:200px;
@@ -128,6 +140,7 @@
 </head>
 <body>
 <main class="tarjeta">
+  <img class="marca-agua" src="logo.png" alt="">
 
   <div class="foto-marco">
     <img src="foto.jpg" alt="Dr. David Gutiérrez, Cirujano Dentista">
